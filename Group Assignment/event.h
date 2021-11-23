@@ -27,6 +27,8 @@ public:
     int get_change_VP() const;
     int get_change_DEFCON() const;
 
+    EVENT() = default;
+
 };
 
 

@@ -49,7 +49,7 @@ Country Guatemala(1, "Guatemala", false);
 Country Cuba(3, "Cuba", true);
 Country Haiti(1, "Haiti", false);
 Country DominicanRep(1, "DominicanRep", false);
-Country EiSalvador(1, "EiSalvador", false);
+Country ElSalvador(1, "ElSalvador", false);
 Country Honduras(1, "Honduras", false);
 Country Nicaragua(1, "Nicaragua", false);
 Country CostaRica(3, "CostaRica", false);
@@ -125,7 +125,7 @@ Country* this_arr[] = {&USA_country, &USSR_country, &Norway, &Finland,
                       &France, &Austria, &Hungary, &Romania, &SpainPortugal,
                       &Italy, &Yugoslavia, &Bulgaria, &Turkey, &Greece,
                       &Mexico, &Guatemala, &Cuba, &Haiti, &DominicanRep,
-                      &EiSalvador, &Honduras, &Nicaragua, &CostaRica,
+                      &ElSalvador, &Honduras, &Nicaragua, &CostaRica,
                       &Panama, &Venezuela, &Columbia, &Ecuador, &Peru,
                       &Brazil, &Bolivia, &Chile, &Paraguay, &Argentina,
                       &Uruguay, &Morocco, &Algeria, &Tunisia,
@@ -234,7 +234,7 @@ void World::allocate_all_country(){
     Mexico.set_neighbor(&USA_country);
     Mexico.set_neighbor(&Guatemala);
     Guatemala.set_neighbor(&Mexico);
-    Guatemala.set_neighbor(&EiSalvador);
+    Guatemala.set_neighbor(&ElSalvador);
     Guatemala.set_neighbor(&Honduras);
     Cuba.set_neighbor(&USA_country);
     Cuba.set_neighbor(&Haiti);
@@ -242,10 +242,10 @@ void World::allocate_all_country(){
     Haiti.set_neighbor(&Cuba);
     Haiti.set_neighbor(&DominicanRep);
     DominicanRep.set_neighbor(&Haiti);
-    EiSalvador.set_neighbor(&Guatemala);
-    EiSalvador.set_neighbor(&Honduras);
+    ElSalvador.set_neighbor(&Guatemala);
+    ElSalvador.set_neighbor(&Honduras);
     Honduras.set_neighbor(&Guatemala);
-    Honduras.set_neighbor(&EiSalvador);
+    Honduras.set_neighbor(&ElSalvador);
     Honduras.set_neighbor(&Nicaragua);
     Honduras.set_neighbor(&CostaRica);
     Nicaragua.set_neighbor(&Cuba);
