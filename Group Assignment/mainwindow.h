@@ -41,6 +41,7 @@ private:
     void change_turn(int curr_turn);
 
 
+
     void change_DEFCON();
     void change_VP();
     void change_turn();

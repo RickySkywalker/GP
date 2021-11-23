@@ -15,6 +15,7 @@ SOURCES += \
     event.cpp \
     event_library.cpp \
     eventpopupwindow.cpp \
+    initialize_countries.cpp \
     main.cpp \
     mainwindow.cpp \
     mainwindow_on_country_clicked_functions.cpp \
