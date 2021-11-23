@@ -1,0 +1,2575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2580</width>
+    <height>1680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="CubaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>750</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NicaraguaUSA">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>850</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NicaraguaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>850</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HaitiUSA">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>820</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HaitiUSSR">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>820</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DominicanRepUSA">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>820</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MoroccoUSA">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IvoryCoastUSA">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>960</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NigeriaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>940</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NigeriaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>940</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IvoryCoastUSSR">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>960</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MexicoUSA">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CubaUSA">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>750</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MexicoUSSR">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GuatemalaUSA">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GuatemalaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HondurasUSA">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>850</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ElSalvadorUSSR">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>860</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HondurasUSSR">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>850</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ElSalvadorUSA">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>860</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LibyaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>750</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LebanonUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1400</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CanadaUSA">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>380</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EGermanyUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EGermanyUSA">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CanadaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>380</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FinlandUSA">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HungaryUSA">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>450</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HungaryUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>450</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LebanonUSA">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AustriaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>440</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SaharanStatesUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>840</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="WestAfricanStatesUSSR">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>810</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="WestAfricanStatesUSA">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>810</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AlgeriaUSA">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>680</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MoroccoUSSR">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DominicanRepUSSR">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>820</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RomaniaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>450</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AlgeriaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>680</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SaharanStatesUSA">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>840</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SpainPortugalUSSR">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>570</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SpainPortugalUSA">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>570</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AustriaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>440</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="WGermanyUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BeneluxUSSR">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="WGermanyUSA">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SwedenUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SwedenUSA">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DenmarkUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>220</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DenmarkUSA">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>220</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NorwayUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FinlandUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UKUSSR">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NorwayUSA">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IsraelUSA">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IsraelUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UKUSA">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BulgariaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>520</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BulgariaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>520</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EgyptUSA">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TurkeyUSA">
+    <property name="geometry">
+     <rect>
+      <x>1410</x>
+      <y>530</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EgyptUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IraqUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1510</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LibyaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>750</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TurkeyUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>530</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SyriaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1510</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IraqUSA">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SyriaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BeneluxUSA">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FranceUSSR">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FranceUSA">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="YugoslaviaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>530</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ItalyUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>520</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ItalyUSA">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>520</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="YugoslaviaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>530</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TunisiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>670</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TunisiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>670</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GreeceUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CzechoslovakiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RomaniaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>450</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PolandUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PolandUSA">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GreeceUSA">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CzechoslovakiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2580</width>
+      <height>1680</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/Photo/background.png);
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CostaRicaUSA">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>930</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CostaRicaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>930</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UruguayUSSR">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>1390</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UruguayUSA">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>1390</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ArgentinaUSA">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>1460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ArgentinaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>1460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChileUSA">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>1310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChileUSSR">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>1310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ParaguayUSA">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>1300</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ParaguayUSSR">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>1300</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BrazilUSA">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>1140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BrazilUSSR">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>1140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BoliviaUSA">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>1210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BoliviaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>1210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PeruUSA">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>1140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PeruUSSR">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>1140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EcuadorUSA">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>1060</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SouthAfricaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>1370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SouthAfricaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>1370</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BotswanaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>1280</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BotswanaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>1280</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZimbabweUSA">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>1200</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZimbabweUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1340</x>
+      <y>1200</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SEAfricanStatesUSA">
+    <property name="geometry">
+     <rect>
+      <x>1400</x>
+      <y>1140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SEAfricanStatesUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1450</x>
+      <y>1140</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZaireUSA">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>1070</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZaireUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>1070</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AngolaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>1160</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AngolaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>1160</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="KenyaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1390</x>
+      <y>1040</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="KenyaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1440</x>
+      <y>1040</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CameroonUSA">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>1030</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CameroonUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>1030</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SomaliaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>970</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SomaliaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>970</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SudanUSA">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>860</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SudanUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>860</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SaudiArabiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>840</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="JordanUSA">
+    <property name="geometry">
+     <rect>
+      <x>1400</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SaudiArabiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>840</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EthiopiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1430</x>
+      <y>940</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EthiopiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>940</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AustraliaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2260</x>
+      <y>1240</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AustraliaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2310</x>
+      <y>1240</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IndonesiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2260</x>
+      <y>1110</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IndonesiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2310</x>
+      <y>1110</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MalaysiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2080</x>
+      <y>1010</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MalaysiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2130</x>
+      <y>1010</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BurmaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1960</x>
+      <y>800</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VietnamUSA">
+    <property name="geometry">
+     <rect>
+      <x>2140</x>
+      <y>890</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BurmaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2010</x>
+      <y>800</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VietnamUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2190</x>
+      <y>890</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ThailandUSA">
+    <property name="geometry">
+     <rect>
+      <x>2020</x>
+      <y>890</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ThailandUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2070</x>
+      <y>890</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PhilippinesUSA">
+    <property name="geometry">
+     <rect>
+      <x>2300</x>
+      <y>890</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PhilippinesUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2350</x>
+      <y>890</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TaiwanChinaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2250</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TaiwanChinaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2300</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LaosCambodiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2070</x>
+      <y>810</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LaosCambodiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2120</x>
+      <y>810</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="JapanUSA">
+    <property name="geometry">
+     <rect>
+      <x>2390</x>
+      <y>680</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="JapanUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2440</x>
+      <y>680</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChinaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2140</x>
+      <y>640</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChinaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2190</x>
+      <y>640</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SKoreaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2300</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SKoreaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2350</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IndiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1870</x>
+      <y>790</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PakistanUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>740</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="JordanUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1450</x>
+      <y>770</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PakistanUSA">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>740</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GulfStatesUSA">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>760</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IndiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>1820</x>
+      <y>790</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IranUSA">
+    <property name="geometry">
+     <rect>
+      <x>1570</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AfghanistanUSA">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>640</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="IranUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GulfStatesUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>760</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AfghanistanUSSR">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>640</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NKoreaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>2330</x>
+      <y>530</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NKoreaUSA">
+    <property name="geometry">
+     <rect>
+      <x>2280</x>
+      <y>530</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EcuadorUSSR">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>1060</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PanamaUSA">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>930</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VenezuelaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>940</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PanamaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>930</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VenezuelaUSA">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>940</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ColombiaUSA">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>1020</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ColombiaUSSR">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>1020</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>741</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="Resource_point">
+     <item>
+      <widget class="QTextBrowser" name="USA_resource">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/Photo/White background.png);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="USSR_resource">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/Photo/White background.png);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btn_next">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>1400</y>
+      <width>211</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/Photo/White background.png);</string>
+    </property>
+    <property name="text">
+     <string>NEXT</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Resource.qrc">
+      <normaloff>:/Icons/Photo/next.png</normaloff>:/Icons/Photo/next.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="curr_player_display">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>1460</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/Photo/Empty background.png);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;USSR&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:28pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="curr_player_head">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>1360</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/Photo/Empty background.png);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Current Player&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_coup">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>1090</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Coup Mode</string>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
+   <zorder>CubaUSSR</zorder>
+   <zorder>NicaraguaUSA</zorder>
+   <zorder>NicaraguaUSSR</zorder>
+   <zorder>HaitiUSA</zorder>
+   <zorder>HaitiUSSR</zorder>
+   <zorder>DominicanRepUSA</zorder>
+   <zorder>MoroccoUSA</zorder>
+   <zorder>IvoryCoastUSA</zorder>
+   <zorder>NigeriaUSA</zorder>
+   <zorder>NigeriaUSSR</zorder>
+   <zorder>IvoryCoastUSSR</zorder>
+   <zorder>MexicoUSA</zorder>
+   <zorder>CubaUSA</zorder>
+   <zorder>MexicoUSSR</zorder>
+   <zorder>GuatemalaUSA</zorder>
+   <zorder>GuatemalaUSSR</zorder>
+   <zorder>HondurasUSA</zorder>
+   <zorder>ElSalvadorUSSR</zorder>
+   <zorder>HondurasUSSR</zorder>
+   <zorder>ElSalvadorUSA</zorder>
+   <zorder>LibyaUSSR</zorder>
+   <zorder>LebanonUSSR</zorder>
+   <zorder>CanadaUSA</zorder>
+   <zorder>EGermanyUSSR</zorder>
+   <zorder>EGermanyUSA</zorder>
+   <zorder>CanadaUSSR</zorder>
+   <zorder>FinlandUSA</zorder>
+   <zorder>HungaryUSA</zorder>
+   <zorder>HungaryUSSR</zorder>
+   <zorder>LebanonUSA</zorder>
+   <zorder>AustriaUSA</zorder>
+   <zorder>SaharanStatesUSSR</zorder>
+   <zorder>WestAfricanStatesUSSR</zorder>
+   <zorder>WestAfricanStatesUSA</zorder>
+   <zorder>AlgeriaUSA</zorder>
+   <zorder>MoroccoUSSR</zorder>
+   <zorder>DominicanRepUSSR</zorder>
+   <zorder>RomaniaUSA</zorder>
+   <zorder>AlgeriaUSSR</zorder>
+   <zorder>SaharanStatesUSA</zorder>
+   <zorder>SpainPortugalUSSR</zorder>
+   <zorder>SpainPortugalUSA</zorder>
+   <zorder>AustriaUSSR</zorder>
+   <zorder>WGermanyUSSR</zorder>
+   <zorder>BeneluxUSSR</zorder>
+   <zorder>WGermanyUSA</zorder>
+   <zorder>SwedenUSSR</zorder>
+   <zorder>SwedenUSA</zorder>
+   <zorder>DenmarkUSSR</zorder>
+   <zorder>DenmarkUSA</zorder>
+   <zorder>NorwayUSSR</zorder>
+   <zorder>FinlandUSSR</zorder>
+   <zorder>UKUSSR</zorder>
+   <zorder>NorwayUSA</zorder>
+   <zorder>IsraelUSA</zorder>
+   <zorder>IsraelUSSR</zorder>
+   <zorder>UKUSA</zorder>
+   <zorder>BulgariaUSSR</zorder>
+   <zorder>BulgariaUSA</zorder>
+   <zorder>EgyptUSA</zorder>
+   <zorder>TurkeyUSA</zorder>
+   <zorder>EgyptUSSR</zorder>
+   <zorder>IraqUSSR</zorder>
+   <zorder>LibyaUSA</zorder>
+   <zorder>TurkeyUSSR</zorder>
+   <zorder>SyriaUSSR</zorder>
+   <zorder>IraqUSA</zorder>
+   <zorder>SyriaUSA</zorder>
+   <zorder>BeneluxUSA</zorder>
+   <zorder>FranceUSSR</zorder>
+   <zorder>FranceUSA</zorder>
+   <zorder>YugoslaviaUSSR</zorder>
+   <zorder>ItalyUSSR</zorder>
+   <zorder>ItalyUSA</zorder>
+   <zorder>YugoslaviaUSA</zorder>
+   <zorder>TunisiaUSA</zorder>
+   <zorder>TunisiaUSSR</zorder>
+   <zorder>GreeceUSSR</zorder>
+   <zorder>CzechoslovakiaUSSR</zorder>
+   <zorder>RomaniaUSSR</zorder>
+   <zorder>PolandUSSR</zorder>
+   <zorder>PolandUSA</zorder>
+   <zorder>GreeceUSA</zorder>
+   <zorder>CzechoslovakiaUSA</zorder>
+   <zorder>CostaRicaUSA</zorder>
+   <zorder>CostaRicaUSSR</zorder>
+   <zorder>UruguayUSSR</zorder>
+   <zorder>UruguayUSA</zorder>
+   <zorder>ArgentinaUSA</zorder>
+   <zorder>ArgentinaUSSR</zorder>
+   <zorder>ChileUSA</zorder>
+   <zorder>ChileUSSR</zorder>
+   <zorder>ParaguayUSA</zorder>
+   <zorder>ParaguayUSSR</zorder>
+   <zorder>BrazilUSA</zorder>
+   <zorder>BrazilUSSR</zorder>
+   <zorder>BoliviaUSA</zorder>
+   <zorder>BoliviaUSSR</zorder>
+   <zorder>PeruUSA</zorder>
+   <zorder>PeruUSSR</zorder>
+   <zorder>EcuadorUSA</zorder>
+   <zorder>SouthAfricaUSA</zorder>
+   <zorder>SouthAfricaUSSR</zorder>
+   <zorder>BotswanaUSA</zorder>
+   <zorder>BotswanaUSSR</zorder>
+   <zorder>ZimbabweUSA</zorder>
+   <zorder>ZimbabweUSSR</zorder>
+   <zorder>SEAfricanStatesUSA</zorder>
+   <zorder>SEAfricanStatesUSSR</zorder>
+   <zorder>ZaireUSA</zorder>
+   <zorder>ZaireUSSR</zorder>
+   <zorder>AngolaUSA</zorder>
+   <zorder>AngolaUSSR</zorder>
+   <zorder>KenyaUSA</zorder>
+   <zorder>KenyaUSSR</zorder>
+   <zorder>CameroonUSA</zorder>
+   <zorder>CameroonUSSR</zorder>
+   <zorder>SomaliaUSA</zorder>
+   <zorder>SomaliaUSSR</zorder>
+   <zorder>SudanUSA</zorder>
+   <zorder>SudanUSSR</zorder>
+   <zorder>SaudiArabiaUSA</zorder>
+   <zorder>JordanUSA</zorder>
+   <zorder>SaudiArabiaUSSR</zorder>
+   <zorder>EthiopiaUSSR</zorder>
+   <zorder>EthiopiaUSA</zorder>
+   <zorder>AustraliaUSA</zorder>
+   <zorder>AustraliaUSSR</zorder>
+   <zorder>IndonesiaUSA</zorder>
+   <zorder>IndonesiaUSSR</zorder>
+   <zorder>MalaysiaUSA</zorder>
+   <zorder>MalaysiaUSSR</zorder>
+   <zorder>BurmaUSA</zorder>
+   <zorder>VietnamUSA</zorder>
+   <zorder>BurmaUSSR</zorder>
+   <zorder>VietnamUSSR</zorder>
+   <zorder>ThailandUSA</zorder>
+   <zorder>ThailandUSSR</zorder>
+   <zorder>PhilippinesUSA</zorder>
+   <zorder>PhilippinesUSSR</zorder>
+   <zorder>TaiwanChinaUSA</zorder>
+   <zorder>TaiwanChinaUSSR</zorder>
+   <zorder>LaosCambodiaUSA</zorder>
+   <zorder>LaosCambodiaUSSR</zorder>
+   <zorder>JapanUSA</zorder>
+   <zorder>JapanUSSR</zorder>
+   <zorder>ChinaUSA</zorder>
+   <zorder>ChinaUSSR</zorder>
+   <zorder>SKoreaUSA</zorder>
+   <zorder>SKoreaUSSR</zorder>
+   <zorder>IndiaUSSR</zorder>
+   <zorder>PakistanUSSR</zorder>
+   <zorder>JordanUSSR</zorder>
+   <zorder>PakistanUSA</zorder>
+   <zorder>GulfStatesUSA</zorder>
+   <zorder>IndiaUSA</zorder>
+   <zorder>IranUSA</zorder>
+   <zorder>AfghanistanUSA</zorder>
+   <zorder>IranUSSR</zorder>
+   <zorder>GulfStatesUSSR</zorder>
+   <zorder>AfghanistanUSSR</zorder>
+   <zorder>NKoreaUSSR</zorder>
+   <zorder>NKoreaUSA</zorder>
+   <zorder>EcuadorUSSR</zorder>
+   <zorder>PanamaUSA</zorder>
+   <zorder>VenezuelaUSSR</zorder>
+   <zorder>PanamaUSSR</zorder>
+   <zorder>VenezuelaUSA</zorder>
+   <zorder>ColombiaUSA</zorder>
+   <zorder>ColombiaUSSR</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>btn_next</zorder>
+   <zorder>curr_player_display</zorder>
+   <zorder>curr_player_head</zorder>
+   <zorder>btn_coup</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2580</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTwlight_Struggle_Lite">
+    <property name="title">
+     <string>Twlight Struggle Lite</string>
+    </property>
+   </widget>
+   <addaction name="menuTwlight_Struggle_Lite"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

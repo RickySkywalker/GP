@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Photo/Basic map.jpg</file>
+        <file>Photo/background.png</file>
+        <file>Photo/Menu Window.jpg</file>
+        <file>Photo/Empty background.png</file>
+        <file>Photo/White background.png</file>
+        <file>Photo/Heading_Twilight.png</file>
+        <file>Photo/Heading_Struggle.png</file>
+    </qresource>
+    <qresource prefix="/Icons">
+        <file>Photo/next.png</file>
+        <file>Photo/less_point_used.png</file>
+    </qresource>
+</RCC>

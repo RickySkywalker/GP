@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ricky/Desktop/OneDrive - HKUST Connect/HKUST/Yr2 Fall Semester/COMP2012H/Group Assignment/Group Assignment/World.cpp
+
