@@ -2485,7 +2485,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="turn1">
     <property name="geometry">
      <rect>
       <x>1840</x>
@@ -2501,7 +2501,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="turn2">
     <property name="geometry">
      <rect>
       <x>1910</x>
@@ -2517,7 +2517,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="turn3">
     <property name="geometry">
      <rect>
       <x>1980</x>
@@ -2533,7 +2533,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="turn4">
     <property name="geometry">
      <rect>
       <x>2041</x>
@@ -2549,7 +2549,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="turn5">
     <property name="geometry">
      <rect>
       <x>2110</x>
@@ -2565,7 +2565,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="turn6">
     <property name="geometry">
      <rect>
       <x>2180</x>
@@ -2581,7 +2581,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="turn7">
     <property name="geometry">
      <rect>
       <x>2251</x>
@@ -2597,7 +2597,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="turn8">
     <property name="geometry">
      <rect>
       <x>2311</x>
@@ -2613,7 +2613,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="turn9">
     <property name="geometry">
      <rect>
       <x>2380</x>
@@ -2629,7 +2629,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="turn10">
     <property name="geometry">
      <rect>
       <x>2450</x>
@@ -2828,16 +2828,16 @@ p, li { white-space: pre-wrap; }
    <zorder>round5</zorder>
    <zorder>round6</zorder>
    <zorder>round7</zorder>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
-   <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
+   <zorder>turn1</zorder>
+   <zorder>turn2</zorder>
+   <zorder>turn3</zorder>
+   <zorder>turn4</zorder>
+   <zorder>turn5</zorder>
+   <zorder>turn6</zorder>
+   <zorder>turn7</zorder>
+   <zorder>turn8</zorder>
+   <zorder>turn9</zorder>
+   <zorder>turn10</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
