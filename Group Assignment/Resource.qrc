@@ -7,6 +7,23 @@
         <file>Photo/White background.png</file>
         <file>Photo/Heading_Twilight.png</file>
         <file>Photo/Heading_Struggle.png</file>
+        <file>Photo/round1_.png</file>
+        <file>Photo/round2_.png</file>
+        <file>Photo/round3_.png</file>
+        <file>Photo/round4_.png</file>
+        <file>Photo/round5_.png</file>
+        <file>Photo/round6_.png</file>
+        <file>Photo/round7_.png</file>
+        <file>Photo/turn1_.png</file>
+        <file>Photo/turn2_.png</file>
+        <file>Photo/turn3_.png</file>
+        <file>Photo/turn4_.png</file>
+        <file>Photo/turn5_.png</file>
+        <file>Photo/turn6_.png</file>
+        <file>Photo/turn7_.png</file>
+        <file>Photo/turn8_.png</file>
+        <file>Photo/turn9_.png</file>
+        <file>Photo/turn10_.png</file>
     </qresource>
     <qresource prefix="/Icons">
         <file>Photo/next.png</file>
