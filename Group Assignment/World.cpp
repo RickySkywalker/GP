@@ -97,13 +97,14 @@ Superpower World::next(){
                 }
 
                 turn++;
-                round = 0;
+                round = 1;
                 curr_player = USSR;
 
             }
         }else{              //Change round
             curr_player = USSR;
             round++;
+
         }
     }else{
 

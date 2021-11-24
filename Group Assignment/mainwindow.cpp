@@ -3,7 +3,6 @@
 //#include "ui_mainwindow.h"
 #include "coupdialogwindow.h"
 #include "event.h"
-#include "event_library.cpp"
 #include "initialize_countries.cpp"
 
 #include <QString>
@@ -23,6 +22,10 @@ void MainWindow::initial_setup_helper(int a, string country_name, Superpower giv
         on_country_clicked_helper(country_name, given, button, true);
     }
     change_icon(country_name, USA_button, USSR_button);
+    change_DEFCON();
+    change_round();
+    change_VP();
+    change_turn();
 
 }
 
@@ -77,6 +80,8 @@ void MainWindow::main_loop(){
                                      "background-color:white;color:red;");
     ui->USA_resource->setStyleSheet("font: 20pt \"Comic Sans MS\";"
                                     "background-color:white;color:blue");
+    change_DEFCON();
+    change_VP();
 }
 
 //add influence successfully, may change icon color
@@ -256,306 +261,17 @@ void MainWindow::on_btn_coup_clicked(){
 
 
 
+
+
 //This will handle everything after next button is clicked
 void MainWindow::on_btn_next_clicked(){
+    next_helper();
+}
+
+
+
+void MainWindow::next_helper(){
     world->next();
-
-}
-
-
-
-void MainWindow::initialize_default_influence(){
-    initial_setup_helper(4, "EGermany", USSR, ui->EGermanyUSSR, ui->EGermanyUSA, ui->EGermanyUSSR);
-    initial_setup_helper(4, "Poland", USSR, ui->PolandUSSR, ui->PolandUSA, ui->PolandUSSR);
-    initial_setup_helper(4, "China", USSR, ui->ChinaUSSR, ui->ChinaUSA, ui->ChinaUSSR);
-    initial_setup_helper(3, "NKorea", USSR, ui->NKoreaUSSR, ui->NKoreaUSA, ui->NKoreaUSSR);
-    initial_setup_helper(1, "Yugoslavia", USSR, ui->YugoslaviaUSSR, ui->YugoslaviaUSA, ui->YugoslaviaUSSR);
-    initial_setup_helper(1,"Syria", USSR, ui->SyriaUSSR, ui->SyriaUSA, ui->SyriaUSSR);
-    initial_setup_helper(1, "Iraq", USSR, ui->IraqUSSR, ui->IraqUSA, ui->IraqUSSR);
-
-    initial_setup_helper(2, "Canada", USA, ui->CanadaUSA, ui->CanadaUSA, ui->CanadaUSSR);
-    initial_setup_helper(2, "Panama", USA, ui->PanamaUSA, ui->PanamaUSA, ui->PanamaUSSR);
-    initial_setup_helper(5, "UK", USA, ui->UKUSA, ui->UKUSA, ui->UKUSSR);
-    initial_setup_helper(4, "WGermany", USA, ui->WGermanyUSA, ui->WGermanyUSA, ui->WGermanyUSSR);
-    initial_setup_helper(3, "Italy", USA, ui->ItalyUSA, ui->ItalyUSA, ui->ItalyUSSR);
-    initial_setup_helper(1, "Israel", USA, ui->IsraelUSA, ui->IsraelUSA, ui->IsraelUSSR);
-    initial_setup_helper(1, "Iran", USA, ui->IranUSA, ui->IranUSA, ui->IranUSSR);
-    initial_setup_helper(1, "SKorea", USA, ui->SKoreaUSA, ui->SKoreaUSA, ui->SKoreaUSSR);
-    initial_setup_helper(1, "Japan", USA, ui->JapanUSA, ui->JapanUSA, ui->JapanUSSR);
-    initial_setup_helper(1, "Philippines", USA, ui->PhilippinesUSA, ui->PhilippinesUSA, ui->PhilippinesUSSR);
-    initial_setup_helper(4, "Australia", USA, ui->AustraliaUSA, ui->AustraliaUSA, ui->AustraliaUSSR);
-    initial_setup_helper(1, "SouthAfrica", USA, ui->SouthAfricaUSA, ui->SouthAfricaUSA, ui->SouthAfricaUSSR);
-}
-
-//given the current round, and show the corresponding label
-void MainWindow::change_round(int curr_round){
-
-    switch (curr_round) {
-    case 1:
-        ui->round1->setVisible(true);
-        ui->round2->setVisible(false);
-        ui->round3->setVisible(false);
-        ui->round4->setVisible(false);
-        ui->round5->setVisible(false);
-        ui->round6->setVisible(false);
-        ui->round7->setVisible(false);
-        break;
-    case 2:
-        ui->round1->setVisible(false);
-        ui->round2->setVisible(true);
-        ui->round3->setVisible(false);
-        ui->round4->setVisible(false);
-        ui->round5->setVisible(false);
-        ui->round6->setVisible(false);
-        ui->round7->setVisible(false);
-        break;
-    case 3:
-        ui->round1->setVisible(false);
-        ui->round2->setVisible(false);
-        ui->round3->setVisible(true);
-        ui->round4->setVisible(false);
-        ui->round5->setVisible(false);
-        ui->round6->setVisible(false);
-        ui->round7->setVisible(false);
-        break;
-    case 4:
-        ui->round1->setVisible(false);
-        ui->round2->setVisible(false);
-        ui->round3->setVisible(false);
-        ui->round4->setVisible(true);
-        ui->round5->setVisible(false);
-        ui->round6->setVisible(false);
-        ui->round7->setVisible(false);
-        break;
-    case 5:
-        ui->round1->setVisible(false);
-        ui->round2->setVisible(false);
-        ui->round3->setVisible(false);
-        ui->round4->setVisible(false);
-        ui->round5->setVisible(true);
-        ui->round6->setVisible(false);
-        ui->round7->setVisible(false);
-        break;
-    case 6:
-        ui->round1->setVisible(false);
-        ui->round2->setVisible(false);
-        ui->round3->setVisible(false);
-        ui->round4->setVisible(false);
-        ui->round5->setVisible(false);
-        ui->round6->setVisible(true);
-        ui->round7->setVisible(false);
-        break;
-    case 7:
-        ui->round1->setVisible(false);
-        ui->round2->setVisible(false);
-        ui->round3->setVisible(false);
-        ui->round4->setVisible(false);
-        ui->round5->setVisible(false);
-        ui->round6->setVisible(false);
-        ui->round7->setVisible(true);
-        break;
-    }
-}
-
-//not given the current round, get the current round by it self, and show the corresponding label
-void MainWindow::change_round(){
-    int round = world->get_round();
-    change_round(round);
-}
-
-//given the current turn, and show the corresponding label
-void MainWindow::change_turn(int curr_turn){
-    switch (curr_turn) {
-    case 1:
-        ui->turn1->setVisible(true);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 2:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(true);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 3:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(true);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 4:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(true);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 5:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(true);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 6:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(true);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 7:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(true);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 8:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(true);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(false);
-        break;
-    case 9:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(true);
-        ui->turn10->setVisible(false);
-        break;
-    case 10:
-        ui->turn1->setVisible(false);
-        ui->turn2->setVisible(false);
-        ui->turn3->setVisible(false);
-        ui->turn4->setVisible(false);
-        ui->turn5->setVisible(false);
-        ui->turn6->setVisible(false);
-        ui->turn7->setVisible(false);
-        ui->turn8->setVisible(false);
-        ui->turn9->setVisible(false);
-        ui->turn10->setVisible(true);
-        break;
-    }
-}
-
-//not given the current turn, get the current turn by it self, and show the corresponding label
-void MainWindow::change_turn(){
-    int turn = world->get_turn();
-    change_turn(turn);
-}
-
-void MainWindow::change_DEFCON(int defcon){
-    switch (defcon) {
-    case 1:
-        ui->defcon1->setVisible(true);
-        ui->defcon2->setVisible(false);
-        ui->defcon3->setVisible(false);
-        ui->defcon4->setVisible(false);
-        ui->defcon5->setVisible(false);
-        break;
-    case 2:
-        ui->defcon1->setVisible(false);
-        ui->defcon2->setVisible(true);
-        ui->defcon3->setVisible(false);
-        ui->defcon4->setVisible(false);
-        ui->defcon5->setVisible(false);
-        break;
-    case 3:
-        ui->defcon1->setVisible(false);
-        ui->defcon2->setVisible(false);
-        ui->defcon3->setVisible(true);
-        ui->defcon4->setVisible(false);
-        ui->defcon5->setVisible(false);
-        break;
-    case 4:
-        ui->defcon1->setVisible(false);
-        ui->defcon2->setVisible(false);
-        ui->defcon3->setVisible(false);
-        ui->defcon4->setVisible(true);
-        ui->defcon5->setVisible(false);
-        break;
-    case 5:
-        ui->defcon1->setVisible(false);
-        ui->defcon2->setVisible(false);
-        ui->defcon3->setVisible(false);
-        ui->defcon4->setVisible(false);
-        ui->defcon5->setVisible(true);
-        break;
-    }
-}
-
-void MainWindow::change_DEFCON(){
-    int defcon = world->get_DEFCON();
-    change_DEFCON(defcon);
-}
-
-void MainWindow::change_VP(int VP){
-    if(VP == 0){
-        ui->VP->setText(QString::number(VP));
-        ui->VP->setStyleSheet("color:black");
-    }
-    else if(VP > 0){
-        ui->VP->setText(QString::number(VP));
-        ui->VP->setStyleSheet("color:#0080c0");
-    }
-    else if(VP < 0){
-        ui->VP->setText(QString::number(-VP));
-        ui->VP->setStyleSheet("color:#bf2026");
-    }
-}
-
-void MainWindow::change_VP(){
-    int VP = world->get_VP();
-    change_VP(VP);
+    change_round();
+    change_turn();
 }

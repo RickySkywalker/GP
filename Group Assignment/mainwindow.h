@@ -5,6 +5,7 @@
 #include <iostream>
 //#include "World.h"
 #include "ui_mainwindow.h"
+#include "event.h"
 
 using namespace std;
 
@@ -56,9 +57,13 @@ private:
 
     //Helper functions
     bool on_country_clicked_helper(string countryname, Superpower given, QPushButton *button, bool in_initial_setup = false);
-    void change_icon(string country_name, QPushButton * button_USA ,QPushButton * button_USSR );
-    void initialize_button_style();
-    void initialize_default_influence();
+    void change_icon(string country_name, QPushButton * button_USA ,QPushButton * button_USSR );//Change icon of the button of influence
+    void initialize_button_style();//Initialize all button style
+    void initialize_default_influence();//Helper for initialize the default influence of two superpowers
+    void next_helper();//Helper function for the next clicked
+
+    void pop_up_event(EVENT* event);
+    void event_helper();
 
 
     void change_btn_coup_style();

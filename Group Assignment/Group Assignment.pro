@@ -18,6 +18,8 @@ SOURCES += \
     initialize_countries.cpp \
     main.cpp \
     mainwindow.cpp \
+    mainwindow_event.cpp \
+    mainwindow_game_status_change.cpp \
     mainwindow_on_country_clicked_functions.cpp \
     menuwindow.cpp \
     Country.cpp \
