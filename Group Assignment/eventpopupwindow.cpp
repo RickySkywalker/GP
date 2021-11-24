@@ -2,11 +2,11 @@
 #include "ui_eventpopupwindow.h"
 #include "Superpowers.h"
 
-QString standard_StyleSheet = "font: 14pt \"Comic Sans MS\";"
+QString standard_StyleSheet = "font: 9pt \"Comic Sans MS\";"
                               "background-color:white;color:black;";
-QString USSR_StyleSheet = "font: 14pt \"Comic Sans MS\";"
+QString USSR_StyleSheet = "font: 9pt \"Comic Sans MS\";"
                           "background-color:white;color:red;";
-QString USA_StyleSheet = "font: 14pt \"Comic Sans MS\";"
+QString USA_StyleSheet = "font: 9pt \"Comic Sans MS\";"
                          "background-color:white;color:blue;";
 
 
@@ -20,7 +20,8 @@ EventPopUpWindow::EventPopUpWindow(EVENT* given_event, QWidget *parent) :
     ui->event_name->setStyleSheet(standard_StyleSheet);
 
     ui->event_describe->setText(QString::fromStdString(given_event->get_description()));
-    ui->event_describe->setStyleSheet(standard_StyleSheet);
+    ui->event_describe->setStyleSheet("font: 9pt \"Comic Sans MS\";"
+                                      "background-color:white;color:black;");
 
     ui->add_point->setText(QString::number(given_event->get_resource_point()));
 

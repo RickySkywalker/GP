@@ -51,6 +51,7 @@ private:
 
     QTimer* loop_timer;
     void main_loop();
+    void count_score_helper();
 
     bool coup_mode;
 
@@ -65,6 +66,9 @@ private:
     void pop_up_event(EVENT* event);
     void event_helper();
 
+    void end_game();
+
+    void score_count_helper();
 
     void change_btn_coup_style();
 

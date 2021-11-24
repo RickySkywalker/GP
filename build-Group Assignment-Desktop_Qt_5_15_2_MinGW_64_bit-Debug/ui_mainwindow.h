@@ -114,7 +114,7 @@ public:
     QPushButton *PolandUSA;
     QPushButton *GreeceUSA;
     QPushButton *CzechoslovakiaUSA;
-    QGraphicsView *graphicsView;
+    QGraphicsView *back_ground;
     QPushButton *CostaRicaUSA;
     QPushButton *CostaRicaUSSR;
     QPushButton *UruguayUSSR;
@@ -497,10 +497,10 @@ public:
         CzechoslovakiaUSA = new QPushButton(centralwidget);
         CzechoslovakiaUSA->setObjectName(QString::fromUtf8("CzechoslovakiaUSA"));
         CzechoslovakiaUSA->setGeometry(QRect(1190, 370, 41, 41));
-        graphicsView = new QGraphicsView(centralwidget);
-        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setGeometry(QRect(0, 0, 2580, 1680));
-        graphicsView->setStyleSheet(QString::fromUtf8("background-image: url(:/new/prefix1/Photo/background.png);\n"
+        back_ground = new QGraphicsView(centralwidget);
+        back_ground->setObjectName(QString::fromUtf8("back_ground"));
+        back_ground->setGeometry(QRect(0, 0, 2580, 1680));
+        back_ground->setStyleSheet(QString::fromUtf8("background-image: url(:/new/prefix1/Photo/background.png);\n"
 ""));
         CostaRicaUSA = new QPushButton(centralwidget);
         CostaRicaUSA->setObjectName(QString::fromUtf8("CostaRicaUSA"));
@@ -911,7 +911,7 @@ public:
         font3.setPointSize(20);
         victory_points->setFont(font3);
         MainWindow->setCentralWidget(centralwidget);
-        graphicsView->raise();
+        back_ground->raise();
         CubaUSSR->raise();
         NicaraguaUSA->raise();
         NicaraguaUSSR->raise();
@@ -1113,7 +1113,7 @@ public:
         victory_points->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 2580, 26));
+        menubar->setGeometry(QRect(0, 0, 2580, 21));
         menuTwlight_Struggle_Lite = new QMenu(menubar);
         menuTwlight_Struggle_Lite->setObjectName(QString::fromUtf8("menuTwlight_Struggle_Lite"));
         MainWindow->setMenuBar(menubar);

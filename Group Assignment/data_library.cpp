@@ -412,29 +412,39 @@ void World::allocate_all_country(){
     Australia.set_neighbor(&Malaysia);
 }
 
+Continent EUROPE(3, 7, -1, Continent::Contient_type::Europe);
+Continent CENTRALAMERICA(1, 3, 5, Continent::Contient_type::Central_America);
+Continent SOUTHAMERICA(2, 5, 6, Continent::Contient_type::South_America);
+Continent AFRICA(1, 4, 6, Continent::Contient_type::Africa);
+Continent MIDDLEEAST(3, 5, 7, Continent::Contient_type::Middle_East);
+Continent ASIA(3, 7, 9, Continent::Contient_type::Asia);
+
+Continent* this_continent_arr[] = {&EUROPE, &CENTRALAMERICA, &SOUTHAMERICA, &AFRICA, &MIDDLEEAST, &ASIA};
+
+
+
 // construst continents
 void World::allocate_all_contient() {
-    Continent EUROPE(3, 7, -1, Continent::Contient_type::Europe);
+
     for (int i = 2; i <= 22; ++i){
         EUROPE.add_country(this_arr[i]);
     }
-    Continent CENTRALAMERICA(1, 3, 5, Continent::Contient_type::Central_America);
     for (int i = 23; i <= 32; ++i){
         CENTRALAMERICA.add_country(this_arr[i]);
     }
-    Continent SOUTHAMERICA(2, 5, 6, Continent::Contient_type::South_America);
+
     for (int i = 33; i <= 42; ++i){
         SOUTHAMERICA.add_country(this_arr[i]);
     }
-    Continent AFRICA(1, 4, 6, Continent::Contient_type::Africa);
+
     for (int i = 43; i <= 60; ++i){
         AFRICA.add_country(this_arr[i]);
     }
-    Continent MIDDLEEAST(3, 5, 7, Continent::Contient_type::Middle_East);
+
     for (int i = 61; i <= 70; ++i){
         MIDDLEEAST.add_country(this_arr[i]);
     }
-    Continent ASIA(3, 7, 9, Continent::Contient_type::Asia);
+
     for (int i = 71; i <= 86; ++i){
         ASIA.add_country(this_arr[i]);
     }

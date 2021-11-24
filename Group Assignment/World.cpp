@@ -14,6 +14,9 @@ World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_reso
     allocate_all_country();
     allocate_all_contient();
     country_array = this_arr;
+    for (int i = 0; i < 6; i++){
+        continent_array.push_back(this_continent_arr[i]);
+    }
 }
 
 
@@ -40,6 +43,10 @@ int World::get_given_influence(Superpower given){
     }else if (given == USA){
         return USA_resource_point;
     }
+}
+
+void World::change_VP(int change_by){
+    VP += change_by;
 }
 
 
@@ -128,7 +135,9 @@ bool World::change_DEFCON(int changed_by){
     if (changed_by != 0){
         if (changed_by > 0){                    //The world is away from Nuclear war
             DEFCON ++;
-
+            if (DEFCON > 5){
+                DEFCON = 5;
+            }
         }else if (changed_by < 0){
             DEFCON--;
             if (DEFCON == 1){
@@ -148,6 +157,13 @@ Country* World::find_country(string &country_name){
             return curr;
         }
     }
+}
+
+
+void World::count_score(Continent::Contient_type given){
+    Continent* curr = continent_array[ static_cast<int>(given)];
+    int VP_change = curr->count_score();
+    VP += VP_change;
 }
 
 

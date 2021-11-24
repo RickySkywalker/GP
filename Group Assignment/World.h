@@ -12,6 +12,7 @@
 #include "Country.h"
 #include "Continent.h"
 #include "Superpowers.h"
+#include <vector>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ private:
 
     const int total_country_number = 87;           //The number of country that this world have
     const int total_continent_number = 6;
-    Continent* continent_array[6];
+    vector<Continent*> continent_array;
     Country** country_array;
     int DEFCON = 5;                     //represent the DEFCON level 1 to 5. Five means peace and one means hot war
     int VP = 0;                         //Victory point
@@ -51,6 +52,8 @@ public:
     void load(string& filename);
     Country* find_country(string& country_name);
 
+    void count_score(Continent::Contient_type given);
+
     //mutators
     void add_USA_resource_point(int a);
     void add_USSR_resource_point(int a);
@@ -58,6 +61,7 @@ public:
     //Will be called if we change the DEFCON
     //Return type will tell whether this will cause an end game false for not, true for yes
     bool change_DEFCON(int changed_by);
+    void change_VP(int change_by);
 
     int get_given_influence(Superpower given);
 

@@ -3,6 +3,7 @@
 //#include "ui_mainwindow.h"
 #include "coupdialogwindow.h"
 #include "event.h"
+//#include "mainwindow_event.cpp"
 #include "initialize_countries.cpp"
 
 #include <QString>
@@ -22,10 +23,8 @@ void MainWindow::initial_setup_helper(int a, string country_name, Superpower giv
         on_country_clicked_helper(country_name, given, button, true);
     }
     change_icon(country_name, USA_button, USSR_button);
-    change_DEFCON();
-    change_round();
-    change_VP();
-    change_turn();
+
+
 
 }
 
@@ -41,6 +40,13 @@ MainWindow::MainWindow(World* const world, QWidget *parent)
     initialize_button_style();
     //Basic setup for the initial influences
     initialize_default_influence();
+
+    change_DEFCON();
+    change_round();
+    change_VP();
+    change_turn();
+
+    event_helper();
 
 }
 
@@ -268,10 +274,39 @@ void MainWindow::on_btn_next_clicked(){
     next_helper();
 }
 
+void MainWindow::end_game(){
+    ui->back_ground->setStyleSheet("");
+}
 
+
+void MainWindow::score_count_helper(){
+    if (world->get_turn() == 1){
+        world->count_score(Continent::Contient_type::Europe);
+    }else if (world->get_turn() == 4){
+        world->count_score(Continent::Contient_type::Central_America);
+    }else if (world->get_turn() == 5){
+        world->count_score(Continent::Contient_type::South_America);
+    }else if (world->get_turn() == 6){
+        world->count_score(Continent::Contient_type::Africa);
+    }else if (world->get_turn() == 7){
+        world->count_score(Continent::Contient_type::Middle_East);
+    }else if (world->get_turn() == 8){
+        world->count_score(Continent::Contient_type::Asia);
+    }
+}
 
 void MainWindow::next_helper(){
+
+    score_count_helper();
+
+    if (world->win_judgement() != NO){
+        end_game();
+    }
     world->next();
     change_round();
     change_turn();
+    event_helper();
+
+
+
 }

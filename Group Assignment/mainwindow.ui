@@ -1109,7 +1109,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="QGraphicsView" name="back_ground">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -2768,7 +2768,7 @@ p, li { white-space: pre-wrap; }
      <string>victory points</string>
     </property>
    </widget>
-   <zorder>graphicsView</zorder>
+   <zorder>back_ground</zorder>
    <zorder>CubaUSSR</zorder>
    <zorder>NicaraguaUSA</zorder>
    <zorder>NicaraguaUSSR</zorder>
@@ -2975,7 +2975,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>2580</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTwlight_Struggle_Lite">
