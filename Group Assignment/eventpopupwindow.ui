@@ -76,10 +76,10 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser">
+   <widget class="QTextBrowser" name="add_point">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>30</x>
       <y>30</y>
       <width>71</width>
       <height>61</height>
@@ -97,7 +97,7 @@ p, li { white-space: pre-wrap; }
    <zorder>event_name</zorder>
    <zorder>event_describe</zorder>
    <zorder>ok</zorder>
-   <zorder>textBrowser</zorder>
+   <zorder>add_point</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

@@ -1,11 +1,37 @@
 #include "eventpopupwindow.h"
 #include "ui_eventpopupwindow.h"
+#include "Superpowers.h"
 
-EventPopUpWindow::EventPopUpWindow(int event_resource_point, std::string description, std::string style_sheet, QWidget *parent) :
-    QMainWindow(parent), point(event_resource_point), description(description), ui(new Ui::EventPopUpWindow),
-    style_sheet(style_sheet)
+QString standard_StyleSheet = "font: 14pt \"Comic Sans MS\";"
+                              "background-color:white;color:black;";
+QString USSR_StyleSheet = "font: 14pt \"Comic Sans MS\";"
+                          "background-color:white;color:red;";
+QString USA_StyleSheet = "font: 14pt \"Comic Sans MS\";"
+                         "background-color:white;color:blue;";
+
+
+EventPopUpWindow::EventPopUpWindow(EVENT* given_event, QWidget *parent) :
+    QMainWindow(parent), ui(new Ui::EventPopUpWindow), given_event(given_event)
 {
     ui->setupUi(this);
+
+    //Initialize the event window
+    ui->event_name->setText(QString::fromStdString(given_event->get_name()));
+    ui->event_name->setStyleSheet(standard_StyleSheet);
+
+    ui->event_describe->setText(QString::fromStdString(given_event->get_description()));
+    ui->event_describe->setStyleSheet(standard_StyleSheet);
+
+    ui->add_point->setText(QString::number(given_event->get_resource_point()));
+
+    if (given_event->get_belong_to() == USA){
+        ui->add_point->setStyleSheet(USA_StyleSheet);
+    }else if (given_event->get_belong_to() == USSR){
+        ui->add_point->setStyleSheet(USSR_StyleSheet);
+    }else{
+        ui->add_point->setStyleSheet(standard_StyleSheet);
+    }
+
 
 }
 
