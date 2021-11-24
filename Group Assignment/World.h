@@ -66,6 +66,8 @@ public:
     int get_given_influence(Superpower given);
 
 
+
+
     //accessors
     int get_DEFCON() const;
     int get_VP() const;

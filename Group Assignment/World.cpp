@@ -10,7 +10,7 @@
 
 
 //This is the constructor of the World calss and is the only constructor that we will use it to construct the world
-World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_resource_point(10), USSR_resource_point(10){
+World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_resource_point(0), USSR_resource_point(0){
     allocate_all_country();
     allocate_all_contient();
     country_array = this_arr;

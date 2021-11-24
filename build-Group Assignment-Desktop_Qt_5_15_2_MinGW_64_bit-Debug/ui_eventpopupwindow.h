@@ -45,10 +45,10 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         event_name = new QTextBrowser(centralwidget);
         event_name->setObjectName(QString::fromUtf8("event_name"));
-        event_name->setGeometry(QRect(170, 20, 251, 41));
+        event_name->setGeometry(QRect(170, 20, 311, 81));
         event_describe = new QTextBrowser(centralwidget);
         event_describe->setObjectName(QString::fromUtf8("event_describe"));
-        event_describe->setGeometry(QRect(70, 120, 471, 161));
+        event_describe->setGeometry(QRect(80, 150, 471, 161));
         ok = new QPushButton(centralwidget);
         ok->setObjectName(QString::fromUtf8("ok"));
         ok->setGeometry(QRect(170, 350, 261, 41));

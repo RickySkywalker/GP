@@ -280,18 +280,20 @@ void MainWindow::end_game(){
 
 
 void MainWindow::score_count_helper(){
-    if (world->get_turn() == 1){
-        world->count_score(Continent::Contient_type::Europe);
-    }else if (world->get_turn() == 4){
-        world->count_score(Continent::Contient_type::Central_America);
-    }else if (world->get_turn() == 5){
-        world->count_score(Continent::Contient_type::South_America);
-    }else if (world->get_turn() == 6){
-        world->count_score(Continent::Contient_type::Africa);
-    }else if (world->get_turn() == 7){
-        world->count_score(Continent::Contient_type::Middle_East);
-    }else if (world->get_turn() == 8){
-        world->count_score(Continent::Contient_type::Asia);
+    if (world->get_curr_player() == USSR){
+        if (world->get_turn() == 1){
+            world->count_score(Continent::Contient_type::Europe);
+        }else if (world->get_turn() == 4){
+            world->count_score(Continent::Contient_type::Central_America);
+        }else if (world->get_turn() == 5){
+            world->count_score(Continent::Contient_type::South_America);
+        }else if (world->get_turn() == 6){
+            world->count_score(Continent::Contient_type::Africa);
+        }else if (world->get_turn() == 7){
+            world->count_score(Continent::Contient_type::Middle_East);
+        }else if (world->get_turn() == 8){
+            world->count_score(Continent::Contient_type::Asia);
+        }
     }
 }
 
@@ -306,6 +308,18 @@ void MainWindow::next_helper(){
     change_round();
     change_turn();
     event_helper();
+
+    if (world->get_round() == 7 && world->get_turn() == 10 && world->get_USA_influence() == USA){
+        world->count_score(Continent::Contient_type::Europe);
+        world->count_score(Continent::Contient_type::Central_America);
+        world->count_score(Continent::Contient_type::South_America);
+        world->count_score(Continent::Contient_type::South_America);
+        world->count_score(Continent::Contient_type::Africa);
+        world->count_score(Continent::Contient_type::Middle_East);
+        world->count_score(Continent::Contient_type::Asia);
+        end_game();
+    }
+
 
 
 
