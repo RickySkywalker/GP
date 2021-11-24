@@ -264,7 +264,6 @@ void MainWindow::on_btn_next_clicked(){
 
 
 
-<<<<<<< HEAD
 void MainWindow::initialize_default_influence(){
     initial_setup_helper(4, "EGermany", USSR, ui->EGermanyUSSR, ui->EGermanyUSA, ui->EGermanyUSSR);
     initial_setup_helper(4, "Poland", USSR, ui->PolandUSSR, ui->PolandUSA, ui->PolandUSSR);
@@ -560,5 +559,3 @@ void MainWindow::change_VP(){
     int VP = world->get_VP();
     change_VP(VP);
 }
-=======
->>>>>>> f52b3ef3c5351cf4a51b76fd30673bf1032c40b6
