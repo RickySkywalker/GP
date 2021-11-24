@@ -772,3 +772,48 @@ void MainWindow::change_turn(){
     int turn = world->get_turn();
     change_turn(turn);
 }
+
+void MainWindow::change_DEFCON(int defcon){
+    switch (defcon) {
+    case 1:
+        ui->defcon1->setVisible(true);
+        ui->defcon2->setVisible(false);
+        ui->defcon3->setVisible(false);
+        ui->defcon4->setVisible(false);
+        ui->defcon5->setVisible(false);
+        break;
+    case 2:
+        ui->defcon1->setVisible(false);
+        ui->defcon2->setVisible(true);
+        ui->defcon3->setVisible(false);
+        ui->defcon4->setVisible(false);
+        ui->defcon5->setVisible(false);
+        break;
+    case 3:
+        ui->defcon1->setVisible(false);
+        ui->defcon2->setVisible(false);
+        ui->defcon3->setVisible(true);
+        ui->defcon4->setVisible(false);
+        ui->defcon5->setVisible(false);
+        break;
+    case 4:
+        ui->defcon1->setVisible(false);
+        ui->defcon2->setVisible(false);
+        ui->defcon3->setVisible(false);
+        ui->defcon4->setVisible(true);
+        ui->defcon5->setVisible(false);
+        break;
+    case 5:
+        ui->defcon1->setVisible(false);
+        ui->defcon2->setVisible(false);
+        ui->defcon3->setVisible(false);
+        ui->defcon4->setVisible(false);
+        ui->defcon5->setVisible(true);
+        break;
+    }
+}
+
+void MainWindow::change_DEFCON(){
+    int defcon = world->get_DEFCON();
+    change_DEFCON(defcon);
+}

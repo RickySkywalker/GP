@@ -24,6 +24,11 @@
         <file>Photo/turn8_.png</file>
         <file>Photo/turn9_.png</file>
         <file>Photo/turn10_.png</file>
+        <file>Photo/defcon1_.png</file>
+        <file>Photo/defcon2_.png</file>
+        <file>Photo/defcon3_.png</file>
+        <file>Photo/defcon4_.png</file>
+        <file>Photo/defcon5_.png</file>
     </qresource>
     <qresource prefix="/Icons">
         <file>Photo/next.png</file>
