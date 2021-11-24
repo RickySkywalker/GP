@@ -2725,6 +2725,49 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="VP">
+    <property name="geometry">
+     <rect>
+      <x>1740</x>
+      <y>1480</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>60</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="victory_points">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>1430</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Algerian</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>victory points</string>
+    </property>
+   </widget>
    <zorder>graphicsView</zorder>
    <zorder>CubaUSSR</zorder>
    <zorder>NicaraguaUSA</zorder>
@@ -2923,6 +2966,8 @@ p, li { white-space: pre-wrap; }
    <zorder>defcon3</zorder>
    <zorder>defcon2</zorder>
    <zorder>defcon1</zorder>
+   <zorder>VP</zorder>
+   <zorder>victory_points</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

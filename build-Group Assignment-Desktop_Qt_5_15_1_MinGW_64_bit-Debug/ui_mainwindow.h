@@ -231,6 +231,8 @@ public:
     QLabel *defcon3;
     QLabel *defcon2;
     QLabel *defcon1;
+    QLabel *VP;
+    QLabel *victory_points;
     QMenuBar *menubar;
     QMenu *menuTwlight_Struggle_Lite;
     QStatusBar *statusbar;
@@ -891,6 +893,23 @@ public:
         defcon1->setObjectName(QString::fromUtf8("defcon1"));
         defcon1->setGeometry(QRect(320, 1274, 61, 61));
         defcon1->setStyleSheet(QString::fromUtf8("image: url(:/new/prefix1/Photo/defcon1_.png);"));
+        VP = new QLabel(centralwidget);
+        VP->setObjectName(QString::fromUtf8("VP"));
+        VP->setGeometry(QRect(1740, 1480, 121, 121));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Agency FB"));
+        font2.setPointSize(60);
+        font2.setBold(true);
+        font2.setWeight(75);
+        VP->setFont(font2);
+        VP->setAlignment(Qt::AlignCenter);
+        victory_points = new QLabel(centralwidget);
+        victory_points->setObjectName(QString::fromUtf8("victory_points"));
+        victory_points->setGeometry(QRect(1680, 1430, 251, 31));
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Algerian"));
+        font3.setPointSize(20);
+        victory_points->setFont(font3);
         MainWindow->setCentralWidget(centralwidget);
         graphicsView->raise();
         CubaUSSR->raise();
@@ -1090,6 +1109,8 @@ public:
         defcon3->raise();
         defcon2->raise();
         defcon1->raise();
+        VP->raise();
+        victory_points->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 2580, 26));
@@ -1325,6 +1346,8 @@ public:
         defcon3->setText(QString());
         defcon2->setText(QString());
         defcon1->setText(QString());
+        VP->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        victory_points->setText(QCoreApplication::translate("MainWindow", "victory points", nullptr));
         menuTwlight_Struggle_Lite->setTitle(QCoreApplication::translate("MainWindow", "Twlight Struggle Lite", nullptr));
     } // retranslateUi
 

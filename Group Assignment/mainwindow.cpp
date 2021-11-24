@@ -106,21 +106,21 @@ void MainWindow::change_icon(string country_name, QPushButton * button_USA ,QPus
     Superpower control = curr->check_control();
     if (control == NO){
         if (curr->get_USA_influence() != 0)
-            button_USA->setStyleSheet("background-color:white;color:blue");
+            button_USA->setStyleSheet("background-color:#eaeaea;color:#007ebd");
 
         if (curr->get_USSR_influence() != 0)
-            button_USSR->setStyleSheet("background-color:white;color:red");
+            button_USSR->setStyleSheet("background-color:#eaeaea;color:#d0232a");
     }
     else if (control == USA){
         if (curr->get_USA_influence() != 0)
             button_USA->setStyleSheet("background-color:#0080c0;color:white");
 
         if (curr->get_USSR_influence() != 0)
-            button_USSR->setStyleSheet("background-color:white;color:red");
+            button_USSR->setStyleSheet("background-color:#eaeaea;color:#d0232a");
     }
     else if (control == USSR){
         if (curr->get_USA_influence() != 0)
-            button_USA->setStyleSheet("background-color:white;color:blue");
+            button_USA->setStyleSheet("background-color:#eaeaea;color:#007ebd");
 
         if (curr->get_USSR_influence() != 0)
             button_USSR->setStyleSheet("background-color:#bf2026;color:#fdd01e");
@@ -816,4 +816,24 @@ void MainWindow::change_DEFCON(int defcon){
 void MainWindow::change_DEFCON(){
     int defcon = world->get_DEFCON();
     change_DEFCON(defcon);
+}
+
+void MainWindow::change_VP(int VP){
+    if(VP == 0){
+        ui->VP->setText(QString::number(VP));
+        ui->VP->setStyleSheet("color:black");
+    }
+    else if(VP > 0){
+        ui->VP->setText(QString::number(VP));
+        ui->VP->setStyleSheet("color:#0080c0");
+    }
+    else if(VP < 0){
+        ui->VP->setText(QString::number(-VP));
+        ui->VP->setStyleSheet("color:#bf2026");
+    }
+}
+
+void MainWindow::change_VP(){
+    int VP = world->get_VP();
+    change_VP(VP);
 }
