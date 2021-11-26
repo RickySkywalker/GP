@@ -4,6 +4,7 @@
 
 #include "Country.h"
 #include <list>
+#include <cmath>
 using namespace std;
 
 Country::Country(int stability, std::string country_name, bool key_country):
@@ -230,4 +231,29 @@ int Country::get_USSR_influence() const{
     return USSR_influence;
 }
 
+
+
+bool Country::operator<(Country const &given) const{
+    return (abs(USSR_influence - USA_influence) > abs(given.USSR_influence < given.USA_influence));
+}
+
+bool Country::operator>(Country const &given) const{
+    return (abs(USSR_influence - USA_influence) < abs(given.USSR_influence < given.USA_influence));
+}
+
+
+bool Country::operator==(Country const &given) const{
+    return (abs(USSR_influence - USA_influence) == abs(given.USSR_influence < given.USA_influence));
+}
+
+
+Country& Country::operator=(Country const &a){
+    this->controlled_by = a.controlled_by;
+    this->stability = a.stability;
+    this->USA_influence = a.USA_influence;
+    this->USSR_influence = a.USSR_influence;
+    this->country_name = a.country_name;
+    this->neighbor = a.neighbor;
+    this->key_country = a.key_country;
+}
 

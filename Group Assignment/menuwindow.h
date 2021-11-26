@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
+
+
 namespace Ui {
 class MenuWindow;
 }
@@ -22,6 +26,9 @@ public slots:
 
 private:
     Ui::MenuWindow *ui;
+    QMediaPlaylist* playlist;
+    QMediaPlayer *music;
+
 
 };
 

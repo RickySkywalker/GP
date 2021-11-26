@@ -17,7 +17,7 @@ private:
     //Changed the control status of the country from two bool to the enum Superpower on 20 Nov
     Superpower controlled_by;
 
-    const int stability;
+    int stability;
     int USA_influence;
     int USSR_influence;
     std::string country_name;
@@ -52,6 +52,13 @@ public:
 
     int get_USA_influence() const;
     int get_USSR_influence() const;
+
+    Country& operator= (Country const & a);
+
+
+    bool operator< (Country const & given) const;
+    bool operator> (Country const & given) const;
+    bool operator== (Country const & given) const;
 };
 
 #endif //GROUP_ASSIGNMENT_COUNTRY_H

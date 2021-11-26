@@ -134,3 +134,9 @@ bool Continent::controlled_all_key(Superpower given) const{
 
 //------------------------------------------------------------------------------------------------------------------------------------
 //End part count of score
+
+
+
+list<Country*> Continent::get_countries(){
+    return countries;
+}

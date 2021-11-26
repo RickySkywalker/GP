@@ -6,9 +6,11 @@
 #include "World.h"
 #include "Continent.h"
 #include <string>
+#include <vector>
 
 using namespace std;
 
+/*
 // construct all the country :-)
 // roughly from up to down
 
@@ -140,7 +142,7 @@ Country* this_arr[] = {&USA_country, &USSR_country, &Norway, &Finland,
                       &Thailand, &Vietnam, &Philippines, &Malaysia,
                       &Indonesia, &Australia};
 
-
+*/
 // set neighbors in the function (^_^) !!
 // roughly from up to down
 
@@ -426,27 +428,28 @@ Continent* this_continent_arr[] = {&EUROPE, &CENTRALAMERICA, &SOUTHAMERICA, &AFR
 // construst continents
 void World::allocate_all_contient() {
 
+
     for (int i = 2; i <= 22; ++i){
-        EUROPE.add_country(this_arr[i]);
+        EUROPE.add_country(World::country_array[i]);
     }
     for (int i = 23; i <= 32; ++i){
-        CENTRALAMERICA.add_country(this_arr[i]);
+        CENTRALAMERICA.add_country(World::country_array[i]);
     }
 
     for (int i = 33; i <= 42; ++i){
-        SOUTHAMERICA.add_country(this_arr[i]);
+        SOUTHAMERICA.add_country(World::country_array[i]);
     }
 
     for (int i = 43; i <= 60; ++i){
-        AFRICA.add_country(this_arr[i]);
+        AFRICA.add_country(World::country_array[i]);
     }
 
     for (int i = 61; i <= 70; ++i){
-        MIDDLEEAST.add_country(this_arr[i]);
+        MIDDLEEAST.add_country(World::country_array[i]);
     }
 
     for (int i = 71; i <= 86; ++i){
-        ASIA.add_country(this_arr[i]);
+        ASIA.add_country(World::country_array[i]);
     }
 }
 

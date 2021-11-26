@@ -41,10 +41,10 @@
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Dubai Medium</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -62,14 +62,14 @@
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Dubai Medium</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
-     <string>Load Game</string>
+     <string>AI - USSR</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Exit">
@@ -83,14 +83,14 @@
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>18</pointsize>
+      <family>Dubai Medium</family>
+      <pointsize>25</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
     <property name="text">
-     <string>Exit</string>
+     <string>AI - USA</string>
     </property>
    </widget>
    <widget class="QLabel" name="Heading_Lite">
@@ -105,7 +105,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>28</pointsize>
+      <pointsize>35</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -156,7 +156,7 @@
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTW_lite">

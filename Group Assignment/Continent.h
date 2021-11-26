@@ -26,6 +26,8 @@ public:
     int get_domination_score() const;
     int get_control_score() const;
 
+    list<Country*> get_countries();
+
 
 private:
     list<Country*> countries;           //List of country that stores all countries in the continent

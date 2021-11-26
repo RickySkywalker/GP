@@ -3,9 +3,15 @@
 
 #include <QMainWindow>
 #include <iostream>
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
+
 //#include "World.h"
 #include "ui_mainwindow.h"
 #include "event.h"
+
+
+#include <map>
 
 using namespace std;
 
@@ -31,25 +37,34 @@ public:
     MainWindow( World* const world, QWidget* parent = nullptr);
     ~MainWindow();
 
+    friend class MainWindowAI;
 
 private:
     Ui::MainWindow *ui;
     World* const world;
+    QTimer* loop_timer;
 
+
+    QMediaPlaylist* playlist;
+    QMediaPlayer *music;
+
+    //The button pointer map for USSR controlled and the USA controlled
+    map<std::string, QPushButton*> USSR_button_map;
+    map<std::string, QPushButton*> USA_button_map;
+
+
+    //helper function for changing the icons of VP, DEFCON, turn and round
     void change_VP(int VP);
     void change_DEFCON(int DEFCON);
     void change_round(int curr_round);
     void change_turn(int curr_turn);
-
-
-
     void change_DEFCON();
     void change_VP();
     void change_turn();
     void change_round();
 
 
-    QTimer* loop_timer;
+
     void main_loop();
     void count_score_helper();
 
@@ -62,6 +77,8 @@ private:
     void initialize_button_style();//Initialize all button style
     void initialize_default_influence();//Helper for initialize the default influence of two superpowers
     void next_helper();//Helper function for the next clicked
+    void initialize_button_list();
+
 
     void pop_up_event(EVENT* event);
     void event_helper();
@@ -80,7 +97,7 @@ private:
 public slots:
 
     void on_btn_coup_clicked();
-    void on_btn_next_clicked();
+    virtual void on_btn_next_clicked();
 
     void on_AfghanistanUSA_clicked();
     void on_AfghanistanUSSR_clicked();

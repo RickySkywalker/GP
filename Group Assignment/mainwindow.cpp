@@ -10,12 +10,13 @@
 #include <QTimer>
 #include <QFileDialog>
 #include <QMainWindow>
+#include <QMediaPlayer>
 using namespace std;
 
 
 QTimer* timer = new QTimer();
 
-QFont influence_tag_font{"Microsoft YaHei", 9, 75};
+QFont influence_tag_font{"Microsoft YaHei", 20, 75};
 
 void MainWindow::initial_setup_helper(int a, string country_name, Superpower given,
                                       QPushButton *button, QPushButton* USA_button, QPushButton* USSR_button){
@@ -40,6 +41,7 @@ MainWindow::MainWindow(World* const world, QWidget *parent)
     initialize_button_style();
     //Basic setup for the initial influences
     initialize_default_influence();
+    setWindowTitle("TS Light");
 
     change_DEFCON();
     change_round();
@@ -47,6 +49,22 @@ MainWindow::MainWindow(World* const world, QWidget *parent)
     change_turn();
 
     event_helper();
+    initialize_button_list();
+
+    playlist = new QMediaPlaylist();
+    playlist->addMedia(QUrl("qrc:/Music/Music/1.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/2.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/3.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/4.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/5.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/6.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/7.wav"));
+    playlist->addMedia(QUrl("qrc:/Music/Music/8.wav"));
+
+    playlist->setPlaybackMode(QMediaPlaylist::Random);
+    music = new QMediaPlayer();
+    music->setPlaylist(playlist);
+    music->play();
 
 }
 
@@ -69,12 +87,12 @@ void MainWindow::main_loop(){
 
     if (world->get_curr_player() == USSR){
         ui->curr_player_display->setText("USSR");
-        ui->curr_player_display->setStyleSheet("font: 14pt \"Comic Sans MS\";"
+        ui->curr_player_display->setStyleSheet("font: 30pt \"Comic Sans MS\";"
                                          "background-image: url(:/new/prefix1/Photo/Empty background.png);"
                                          "color:red;");
     }else if (world->get_curr_player() == USA){
         ui->curr_player_display->setText("USA");
-        ui->curr_player_display->setStyleSheet("font: 14pt \"Comic Sans MS\";"
+        ui->curr_player_display->setStyleSheet("font: 30pt \"Comic Sans MS\";"
                                         "background-image: url(:/new/prefix1/Photo/Empty background.png);"
                                         "color:blue");
     }
@@ -82,12 +100,16 @@ void MainWindow::main_loop(){
     ui->curr_player_display->setAlignment(Qt::AlignHCenter);
 
 
-    ui->USSR_resource->setStyleSheet("font: 20pt \"Comic Sans MS\";"
+    ui->USSR_resource->setStyleSheet("font: 35pt \"Comic Sans MS\";"
                                      "background-color:white;color:red;");
-    ui->USA_resource->setStyleSheet("font: 20pt \"Comic Sans MS\";"
+    ui->USA_resource->setStyleSheet("font: 35pt \"Comic Sans MS\";"
                                     "background-color:white;color:blue");
     change_DEFCON();
     change_VP();
+
+    if (world->get_DEFCON() == 1){
+        end_game();
+    }
 }
 
 //add influence successfully, may change icon color
@@ -219,7 +241,7 @@ bool MainWindow::on_country_clicked_helper(string countryname, Superpower given,
                 if (given == USSR){
                     max_cost = world->get_USSR_influence();
                 }else if (given == USA){
-                    max_cost = world->get_USSR_influence();
+                    max_cost = world->get_USA_influence();
                 }
                 CoupDialogWindow* coup_window = new CoupDialogWindow(min_cost, max_cost, nullptr);
                 coup_window->exec();
@@ -232,6 +254,9 @@ bool MainWindow::on_country_clicked_helper(string countryname, Superpower given,
                     world->add_USA_resource_point(-point_used);
                 }
                 curr->coup(given, point_used);
+                if (curr->is_key_country()){
+                    world->change_DEFCON(-1);
+                }
                 //delete coup_window;
                 return true;
             }
@@ -250,12 +275,12 @@ string coup_off = "Coup mode: OFF";
 void MainWindow::change_btn_coup_style(){
     QPushButton* curr = ui->btn_coup;
     if (coup_mode){
-        curr->setText(QString::fromStdString(coup_off));
-        curr->setStyleSheet("font: 20pt \"Comic Sans MS\";"
+        curr->setText(QString::fromStdString(coup_on));
+        curr->setStyleSheet("font: 30pt \"Comic Sans MS\";"
                             "background-color:white;color:red;");
     }else{
-        curr->setText(QString::fromStdString(coup_on));
-        curr->setStyleSheet("font: 20pt \"Comic Sans MS\";"
+        curr->setText(QString::fromStdString(coup_off));
+        curr->setStyleSheet("font: 30pt \"Comic Sans MS\";"
                             "background-color:white;color:green;");
     }
 }

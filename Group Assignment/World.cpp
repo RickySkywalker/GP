@@ -7,16 +7,39 @@
 #include "Country.h"
 #include "data_library.cpp"
 
+#include <array>
+
+
 
 
 //This is the constructor of the World calss and is the only constructor that we will use it to construct the world
 World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_resource_point(0), USSR_resource_point(0){
+
+    country_array = std::vector<Country*> {&USA_country, &USSR_country, &Norway, &Finland,
+                  &Sweden, &Denmark, &Canada, &UK, &EGermany,
+                  &Poland, &Benelux, &WGermany, &Czechoslovakia,
+                  &France, &Austria, &Hungary, &Romania, &SpainPortugal,
+                  &Italy, &Yugoslavia, &Bulgaria, &Turkey, &Greece,
+                  &Mexico, &Guatemala, &Cuba, &Haiti, &DominicanRep,
+                  &ElSalvador, &Honduras, &Nicaragua, &CostaRica,
+                  &Panama, &Venezuela, &Columbia, &Ecuador, &Peru,
+                  &Brazil, &Bolivia, &Chile, &Paraguay, &Argentina,
+                  &Uruguay, &Morocco, &Algeria, &Tunisia,
+                  &WestAfricanStates, &SaharanStates, &Sudan,
+                  &IvoryCoast, &Nigeria, &Ethiopia, &Somalia,
+                  &Cameroon, &Zaire, &Kenya, &Angola, &Zimbabwe,
+                  &SEAfricanStates, &Botswana, &SouthAfrica, &Lebanon,
+                  &Syria, &Israel, &Iraq, &Iran, &Libya, &Egypt,
+                  &Jordan, &GulfStates, &SaudiArabia, &NKorea,
+                  &Afghanistan, &China, &SKorea, &Japan, &Pakistan,
+                  &India, &Burma, &LaosCambodia, &TaiwanChina,
+                  &Thailand, &Vietnam, &Philippines, &Malaysia,
+                  &Indonesia, &Australia};
+
+    continent_array = std::vector<Continent*> {&EUROPE, &CENTRALAMERICA, &SOUTHAMERICA, &AFRICA, &MIDDLEEAST, &ASIA};
+
     allocate_all_country();
     allocate_all_contient();
-    country_array = this_arr;
-    for (int i = 0; i < 6; i++){
-        continent_array.push_back(this_continent_arr[i]);
-    }
 }
 
 

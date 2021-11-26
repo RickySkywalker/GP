@@ -34,4 +34,15 @@
         <file>Photo/next.png</file>
         <file>Photo/less_point_used.png</file>
     </qresource>
+    <qresource prefix="/Music">
+        <file>Music/1.wav</file>
+        <file>Music/2.wav</file>
+        <file>Music/3.wav</file>
+        <file>Music/4.wav</file>
+        <file>Music/5.wav</file>
+        <file>Music/6.wav</file>
+        <file>Music/7.wav</file>
+        <file>Music/8.wav</file>
+        <file>Music/menu theme.wav</file>
+    </qresource>
 </RCC>

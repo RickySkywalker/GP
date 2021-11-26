@@ -1,6 +1,13 @@
 #include "menuwindow.h"
 #include "ui_menuwindow.h"
 #include "mainwindow.h"
+#include "mainwindowai.h"
+
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
+#include <QSound>
+#include <Qt>
+
 
 MenuWindow::MenuWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,6 +20,22 @@ MenuWindow::MenuWindow(QWidget *parent) :
     ui->LoadGame->setStyleSheet("background-color:#fcf1ef;");
     ui->NewGame->setStyleSheet("background-color:#fcf1ef;");
     ui->Exit->setStyleSheet("background-color:#fcf1ef;");
+
+
+
+
+    playlist = new QMediaPlaylist();
+    //background-image: url(:/new/prefix1/Photo/background.png);
+
+    QUrl aaa = QUrl("qrc:/Music/Music/menu theme.wav");
+    playlist->addMedia(aaa);
+
+    music = new QMediaPlayer();
+    music->setPlaylist(playlist);
+    music->play();
+
+    //QSound::play(":/new/prefix1/Music/menu theme.wav");
+
 }
 
 MenuWindow::~MenuWindow()
@@ -22,15 +45,26 @@ MenuWindow::~MenuWindow()
 
 void MenuWindow::on_NewGame_clicked(){
     MainWindow* w = new MainWindow{new World(), nullptr};
+    //w->setAttribute(Qt::AA_Use96Dpi);
     w->show();
     this->close();
+    delete music;
+    delete playlist;
 }
 
 void MenuWindow::on_LoadGame_clicked(){
     //lue
+    MainWindow* w = new MainWindowAI{new World(), USSR, nullptr};
+    w->show();
+    this->close();
+    delete music;
+    delete playlist;
 }
 
 void MenuWindow::on_Exit_clicked(){
-    exit(-1);
+    MainWindow* w = new MainWindowAI{new World(), USA, nullptr};
+    w->show();
     this->close();
+    delete music;
+    delete playlist;
 }

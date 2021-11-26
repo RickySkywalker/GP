@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui \
+         multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -21,6 +22,7 @@ SOURCES += \
     mainwindow_event.cpp \
     mainwindow_game_status_change.cpp \
     mainwindow_on_country_clicked_functions.cpp \
+    mainwindowai.cpp \
     menuwindow.cpp \
     Country.cpp \
     data_library.cpp \
@@ -34,6 +36,7 @@ HEADERS += \
     event.h \
     eventpopupwindow.h \
     mainwindow.h \
+    mainwindowai.h \
     menuwindow.h \
     Continent.h \
     World.h \

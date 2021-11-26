@@ -28,8 +28,8 @@ CoupDialogWindow::CoupDialogWindow(int min_cost, int max_cost, QWidget* parent):
 //this function will initialize the curr_used on screen and set to the point that we currently used
 void CoupDialogWindow::update_number(){
     ui->curr_used->setText(QString::number(point_used));
-    ui->curr_used->setStyleSheet("font: 20pt \"Comic Sans MS\";"
-                                       "background-color:white;color:green;");
+    ui->curr_used->setStyleSheet("font: 40pt \"Comic Sans MS\";"
+                                       "background-color:white;color:red;");
 
 }
 
