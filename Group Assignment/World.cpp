@@ -46,9 +46,57 @@ World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_reso
 
 //The constructor that we use in the load function
 //TODO: the format of savefile to be determined
-//World::World(string& filename){
+World::World(string& filename){
+    country_array = std::vector<Country*> {&USA_country, &USSR_country, &Norway, &Finland,
+                  &Sweden, &Denmark, &Canada, &UK, &EGermany,
+                  &Poland, &Benelux, &WGermany, &Czechoslovakia,
+                  &France, &Austria, &Hungary, &Romania, &SpainPortugal,
+                  &Italy, &Yugoslavia, &Bulgaria, &Turkey, &Greece,
+                  &Mexico, &Guatemala, &Cuba, &Haiti, &DominicanRep,
+                  &ElSalvador, &Honduras, &Nicaragua, &CostaRica,
+                  &Panama, &Venezuela, &Columbia, &Ecuador, &Peru,
+                  &Brazil, &Bolivia, &Chile, &Paraguay, &Argentina,
+                  &Uruguay, &Morocco, &Algeria, &Tunisia,
+                  &WestAfricanStates, &SaharanStates, &Sudan,
+                  &IvoryCoast, &Nigeria, &Ethiopia, &Somalia,
+                  &Cameroon, &Zaire, &Kenya, &Angola, &Zimbabwe,
+                  &SEAfricanStates, &Botswana, &SouthAfrica, &Lebanon,
+                  &Syria, &Israel, &Iraq, &Iran, &Libya, &Egypt,
+                  &Jordan, &GulfStates, &SaudiArabia, &NKorea,
+                  &Afghanistan, &China, &SKorea, &Japan, &Pakistan,
+                  &India, &Burma, &LaosCambodia, &TaiwanChina,
+                  &Thailand, &Vietnam, &Philippines, &Malaysia,
+                  &Indonesia, &Australia};
 
-//}
+    continent_array = std::vector<Continent*> {&EUROPE, &CENTRALAMERICA, &SOUTHAMERICA, &AFRICA, &MIDDLEEAST, &ASIA};
+
+    allocate_all_country();
+    allocate_all_contient();
+
+    ifstream saved_file;
+    saved_file.open(filename);
+    // set the member variable
+    saved_file >> turn;
+    saved_file >> round;
+    saved_file >> DEFCON;
+    saved_file >> VP;
+    int current_superpower;
+    saved_file >> current_superpower;
+    curr_player = static_cast<Superpower>(current_superpower);
+    saved_file >> USA_resource_point;
+    saved_file >> USSR_resource_point;
+    // set the influence points of countries
+    for (int i = 2; i <= 86; ++i){
+        int curr_USA_point = country_array[i]->get_USA_influence();
+        int tar_USA_point;
+        saved_file >> tar_USA_point;
+        country_array[i]->add_influence(USA, tar_USA_point-curr_USA_point);
+        int curr_USSR_point = country_array[i]->get_USSR_influence();
+        int tar_USSR_point;
+        saved_file >> tar_USSR_point;
+        country_array[i]->add_influence(USA, tar_USSR_point-curr_USSR_point);
+    }
+}
 
 //Judge whether someone will win the game, will be called after the end of each turn (not include the final turn)
 Superpower World::win_judgement(){
@@ -91,15 +139,15 @@ void World::save(string& filename){
     // output the influence points in each country
     for (int i = 2; i <= 86; ++i){
         output_file << country_array[i]->get_USA_influence() << " "
-                    << country_array[i]->get_USSR_influence() << "\n";
+                    << country_array[i]->get_USSR_influence() << endl;
     }
     output_file.close();
 }
 
 
-//void World::load(string& filename){
-//    World* world = new World(filename);
-//}
+void World::load(string& filename){
+    World* world = new World(filename);
+}
 
 
 /**
