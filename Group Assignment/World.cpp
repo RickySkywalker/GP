@@ -7,6 +7,7 @@
 #include "Country.h"
 #include "data_library.cpp"
 
+#include <fstream>
 #include <array>
 
 
@@ -45,9 +46,9 @@ World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_reso
 
 //The constructor that we use in the load function
 //TODO: the format of savefile to be determined
-World::World(string& filename){
+//World::World(string& filename){
 
-}
+//}
 
 //Judge whether someone will win the game, will be called after the end of each turn (not include the final turn)
 Superpower World::win_judgement(){
@@ -66,6 +67,7 @@ int World::get_given_influence(Superpower given){
     }else if (given == USA){
         return USA_resource_point;
     }
+    return 0;
 }
 
 void World::change_VP(int change_by){
@@ -74,13 +76,28 @@ void World::change_VP(int change_by){
 
 
 
-//The structure of savefile to be determined
-//void save(string& filename){
+//The format of savefile is determined in save file format.txt
+void World::save(string& filename){
+    ofstream output_file;
+    output_file.open(filename);
+    // output member variable
+    output_file << turn << endl;
+    output_file << round << endl;
+    output_file << DEFCON << endl;
+    output_file << VP << endl;
+    output_file << curr_player << endl;
+    output_file << USA_resource_point << endl;
+    output_file << USSR_resource_point << endl;
+    // output the influence points in each country
+    for (int i = 2; i <= 86; ++i){
+        output_file << country_array[i]->get_USA_influence() << " "
+                    << country_array[i]->get_USSR_influence() << "\n";
+    }
+    output_file.close();
+}
 
-//}
 
-
-//void load(string& filename){
+//void World::load(string& filename){
 //    World* world = new World(filename);
 //}
 
@@ -180,6 +197,7 @@ Country* World::find_country(string &country_name){
             return curr;
         }
     }
+    return nullptr;
 }
 
 

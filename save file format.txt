@@ -1,0 +1,15 @@
+turn number
+round number
+DEFCON level
+current VP
+current superpower
+USA resourse point
+USSR resource point
+// following is the influence point in each country
+country_array[2]->USA_influence <<" "<< country_array[2]->USSR_influence << "\n"
+country_array[3]->USA_influence <<" "<< country_array[3]->USSR_influence << "\n"
+country_array[4]->USA_influence <<" "<< country_array[4]->USSR_influence << "\n"
+country_array[5]->USA_influence <<" "<< country_array[5]->USSR_influence << "\n"
+...
+country_array[86]->USA_influence <<" "<< country_array[86]->USSR_influence << "\n"
+
