@@ -75,14 +75,14 @@ void World::change_VP(int change_by){
 
 
 //The structure of savefile to be determined
-void save(string& filename){
+//void save(string& filename){
 
-}
+//}
 
 
-void load(string& filename){
-    World* world = new World(filename);
-}
+//void load(string& filename){
+//    World* world = new World(filename);
+//}
 
 
 /**
