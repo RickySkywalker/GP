@@ -19,6 +19,7 @@ EventPopUpWindow::EventPopUpWindow(EVENT* given_event,World* const world , QWidg
 //    ui->event_name->setText(QString::fromStdString(given_event->get_name()));
 //    ui->event_name->setStyleSheet(standard_StyleSheet);
     ui->color_top->setText(QString::fromStdString(given_event->get_name()));
+    setWindowTitle("Event");
 //    ui->color_top->setStyleSheet("font: 20pt \"Comic Sans MS\";""color:white;");
 
     ui->event_describe->setText(QString::fromStdString(given_event->get_description()));

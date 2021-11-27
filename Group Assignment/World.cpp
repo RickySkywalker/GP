@@ -46,7 +46,7 @@ World::World(): DEFCON(5), VP(0), curr_player(USSR), turn(1), round(1), USA_reso
 
 //The constructor that we use in the load function
 //TODO: the format of savefile to be determined
-World::World(string& filename){
+World::World(std::string& filename){
     country_array = std::vector<Country*> {&USA_country, &USSR_country, &Norway, &Finland,
                   &Sweden, &Denmark, &Canada, &UK, &EGermany,
                   &Poland, &Benelux, &WGermany, &Czechoslovakia,
@@ -87,15 +87,17 @@ World::World(string& filename){
     saved_file >> USSR_resource_point;
     // set the influence points of countries
     for (int i = 2; i <= 86; ++i){
-        int curr_USA_point = country_array[i]->get_USA_influence();
+        //int curr_USA_point = country_array[i]->get_USA_influence();
+        Country* curr = country_array[i];
         int tar_USA_point;
         saved_file >> tar_USA_point;
-        country_array[i]->add_influence(USA, tar_USA_point-curr_USA_point);
-        int curr_USSR_point = country_array[i]->get_USSR_influence();
+        country_array[i]->add_influence(USA, tar_USA_point);
+        //int curr_USSR_point = country_array[i]->get_USSR_influence();
         int tar_USSR_point;
         saved_file >> tar_USSR_point;
-        country_array[i]->add_influence(USA, tar_USSR_point-curr_USSR_point);
+        country_array[i]->add_influence(USSR, tar_USSR_point);
     }
+    cout << "aaa" << endl;
 }
 
 //Judge whether someone will win the game, will be called after the end of each turn (not include the final turn)

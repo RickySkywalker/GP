@@ -34,7 +34,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    MainWindow( World* const world, QWidget* parent = nullptr);
+    MainWindow( World* const world, QWidget* parent = nullptr, bool in_load = false);
     ~MainWindow();
 
     friend class MainWindowAI;
@@ -95,6 +95,8 @@ private:
 
 
 public slots:
+
+    void on_btn_save_clicked();
 
     void on_btn_coup_clicked();
     virtual void on_btn_next_clicked();

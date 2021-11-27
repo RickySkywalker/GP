@@ -47,7 +47,7 @@ public:
     vector<Continent*> continent_array;
     vector<Country*> country_array;
 
-    World(string& filename);
+    World(std::string& filename);
     World();
     Superpower next();
     Superpower win_judgement();

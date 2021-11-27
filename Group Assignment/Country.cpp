@@ -28,9 +28,9 @@ Superpower Country::check_control() const{
 //Note this function is only used when we use the
 bool Country::add_influence(Superpower superpower, int add){
     if (superpower == Superpower::USA){
-        USA_influence ++;
+        USA_influence += add;
     }else if (superpower == Superpower::USSR){
-        USSR_influence ++;
+        USSR_influence += add;
     }
     return change_control_after_influence_change(superpower);
 

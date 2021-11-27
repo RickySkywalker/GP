@@ -7,6 +7,7 @@
 #include <QMediaPlaylist>
 #include <QSound>
 #include <Qt>
+#include <QFileDialog>
 
 
 MenuWindow::MenuWindow(QWidget *parent) :
@@ -25,6 +26,7 @@ MenuWindow::MenuWindow(QWidget *parent) :
 
 
     playlist = new QMediaPlaylist();
+    setWindowTitle("TS Light");
     //background-image: url(:/new/prefix1/Photo/background.png);
 
     QUrl aaa = QUrl("qrc:/Music/Music/menu theme.wav");
@@ -68,3 +70,17 @@ void MenuWindow::on_Exit_clicked(){
     delete music;
     delete playlist;
 }
+
+
+void MenuWindow::on_btn_load_clicked(){
+    QString save_file_name = QFileDialog::getOpenFileName(this, "Open save file");
+    std::string aaa = save_file_name.toStdString();
+    World* this_world = new World(aaa);
+
+    MainWindow* w = new MainWindow{this_world, nullptr, true};
+    w->show();
+    this->close();
+    delete music;
+    delete playlist;
+}
+

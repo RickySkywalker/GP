@@ -30,7 +30,7 @@ void MainWindow::initial_setup_helper(int a, string country_name, Superpower giv
 }
 
 
-MainWindow::MainWindow(World* const world, QWidget *parent)
+MainWindow::MainWindow(World* const world, QWidget *parent, bool in_load)
     : QMainWindow(parent), ui(new Ui::MainWindow), world(world), coup_mode(false)
 {
     ui->setupUi(this);
@@ -40,7 +40,7 @@ MainWindow::MainWindow(World* const world, QWidget *parent)
     loop_timer->start(20);
     initialize_button_style();
     //Basic setup for the initial influences
-    initialize_default_influence();
+
     setWindowTitle("TS Light");
 
     change_DEFCON();
@@ -48,8 +48,17 @@ MainWindow::MainWindow(World* const world, QWidget *parent)
     change_VP();
     change_turn();
 
-    event_helper();
     initialize_button_list();
+
+    if (!in_load){
+        initialize_default_influence();
+        event_helper();
+    }else{
+        for (int i = 2; i < world->country_array.size(); i++){
+            Country* curr = world->country_array[i];
+            change_icon(curr->get_name(), USA_button_map[curr->get_name()], USSR_button_map[curr->get_name()]);
+        }
+    }
 
     playlist = new QMediaPlaylist();
     playlist->addMedia(QUrl("qrc:/Music/Music/1.wav"));
@@ -344,8 +353,13 @@ void MainWindow::next_helper(){
         world->count_score(Continent::Contient_type::Asia);
         end_game();
     }
+}
 
 
 
+void MainWindow::on_btn_save_clicked(){
+    QString save_file_name = QFileDialog::getOpenFileName(this, "Open save file");
 
+    std::string std_name = save_file_name.toStdString();
+    world->save(std_name);
 }

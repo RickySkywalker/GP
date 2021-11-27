@@ -2767,6 +2767,25 @@ p, li { white-space: pre-wrap; }
      <string>victory points</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_save">
+    <property name="geometry">
+     <rect>
+      <x>2270</x>
+      <y>1540</y>
+      <width>261</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
    <zorder>back_ground</zorder>
    <zorder>CubaUSSR</zorder>
    <zorder>NicaraguaUSA</zorder>
@@ -2967,6 +2986,7 @@ p, li { white-space: pre-wrap; }
    <zorder>defcon1</zorder>
    <zorder>VP</zorder>
    <zorder>victory_points</zorder>
+   <zorder>btn_save</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

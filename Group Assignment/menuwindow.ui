@@ -54,9 +54,9 @@
    <widget class="QPushButton" name="LoadGame">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>610</x>
       <y>460</y>
-      <width>251</width>
+      <width>121</width>
       <height>81</height>
      </rect>
     </property>
@@ -69,15 +69,15 @@
      </font>
     </property>
     <property name="text">
-     <string>AI - USSR</string>
+     <string>USSR</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Exit">
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>590</y>
-      <width>251</width>
+      <y>460</y>
+      <width>131</width>
       <height>81</height>
      </rect>
     </property>
@@ -90,7 +90,7 @@
      </font>
     </property>
     <property name="text">
-     <string>AI - USA</string>
+     <string>USA</string>
     </property>
    </widget>
    <widget class="QLabel" name="Heading_Lite">
@@ -147,6 +147,25 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_load">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>580</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Load</string>
     </property>
    </widget>
   </widget>
