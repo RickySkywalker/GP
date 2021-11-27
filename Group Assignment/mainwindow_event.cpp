@@ -51,7 +51,7 @@ void MainWindow::event_helper(){
 
 
 void MainWindow::pop_up_event(EVENT *event){
-    QMainWindow* event_windows = new EventPopUpWindow(event, nullptr);
+    QMainWindow* event_windows = new EventPopUpWindow(event, world ,nullptr);
 
     event_windows->setAttribute(Qt::WA_DeleteOnClose);
 
