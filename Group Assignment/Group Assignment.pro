@@ -13,7 +13,6 @@ CONFIG+=resources_big
 SOURCES += \
     Continent.cpp \
     coupdialogwindow.cpp \
-    couppopwindow.cpp \
     event.cpp \
     event_library.cpp \
     eventpopupwindow.cpp \
@@ -32,7 +31,6 @@ SOURCES += \
 
 HEADERS += \
     coupdialogwindow.h \
-    couppopwindow.h \
     event.h \
     eventpopupwindow.h \
     mainwindow.h \
@@ -45,7 +43,6 @@ HEADERS += \
 
 FORMS += \
     coupdialogwindow.ui \
-    couppopwindow.ui \
     eventpopupwindow.ui \
     mainwindow.ui \
     menuwindow.ui

@@ -23,7 +23,7 @@ QT_END_NAMESPACE
 #include "Country.h"
 #include "Continent.h"
 #include "Superpowers.h"
-#include "couppopwindow.h"
+//#include "couppopwindow.h"
 
 #include <QMainWindow>
 namespace Ui { class MainWindow; }

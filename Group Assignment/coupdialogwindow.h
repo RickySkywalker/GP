@@ -15,6 +15,7 @@ public:
     explicit CoupDialogWindow(QWidget *parent = nullptr);
     ~CoupDialogWindow();
 
+    //The constructor for the window, it will take the max and min cost
     explicit CoupDialogWindow(int min_cost, int max_cost, QWidget *parent = nullptr);
     int get_point_used() const;
     bool get_status() const;

@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "couppopwindow.h"
+//#include "couppopwindow.h"
 //#include "ui_mainwindow.h"
 #include "coupdialogwindow.h"
 #include "event.h"
