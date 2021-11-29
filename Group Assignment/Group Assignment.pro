@@ -27,8 +27,7 @@ SOURCES += \
     menuwindow.cpp \
     Country.cpp \
     data_library.cpp \
-    World.cpp \
-    wzy_work.cpp
+    World.cpp
 
 
 HEADERS += \
