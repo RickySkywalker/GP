@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MenuWindow_t {
     QByteArrayData data[6];
-    char stringdata0[87];
+    char stringdata0[90];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,13 +35,13 @@ static const qt_meta_stringdata_MenuWindow_t qt_meta_stringdata_MenuWindow = {
 QT_MOC_LITERAL(0, 0, 10), // "MenuWindow"
 QT_MOC_LITERAL(1, 11, 18), // "on_NewGame_clicked"
 QT_MOC_LITERAL(2, 30, 0), // ""
-QT_MOC_LITERAL(3, 31, 19), // "on_LoadGame_clicked"
-QT_MOC_LITERAL(4, 51, 15), // "on_Exit_clicked"
-QT_MOC_LITERAL(5, 67, 19) // "on_btn_load_clicked"
+QT_MOC_LITERAL(3, 31, 18), // "on_btn_USA_clicked"
+QT_MOC_LITERAL(4, 50, 19), // "on_btn_USSR_clicked"
+QT_MOC_LITERAL(5, 70, 19) // "on_btn_load_clicked"
 
     },
     "MenuWindow\0on_NewGame_clicked\0\0"
-    "on_LoadGame_clicked\0on_Exit_clicked\0"
+    "on_btn_USA_clicked\0on_btn_USSR_clicked\0"
     "on_btn_load_clicked"
 };
 #undef QT_MOC_LITERAL
@@ -81,8 +81,8 @@ void MenuWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_NewGame_clicked(); break;
-        case 1: _t->on_LoadGame_clicked(); break;
-        case 2: _t->on_Exit_clicked(); break;
+        case 1: _t->on_btn_USA_clicked(); break;
+        case 2: _t->on_btn_USSR_clicked(); break;
         case 3: _t->on_btn_load_clicked(); break;
         default: ;
         }
